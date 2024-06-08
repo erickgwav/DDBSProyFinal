@@ -1,1 +1,6 @@
-nalgan
+Angular CLI: 15.2.1
+Node: 18.20.3
+Package Manager: npm 10.7.0
+
+Para ejecutar backend: npm run backend
+Para ejecutar frontend: ng serve
