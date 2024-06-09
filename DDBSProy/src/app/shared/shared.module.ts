@@ -4,13 +4,15 @@ import { RouterModule} from '@angular/router';
 
 import { MenuComponent } from './menu/menu.component';
 import { ContactanosComponent } from './contactanos/contactanos.component';
+import { PaquetesComponent } from './paquetes/paquetes.component';
 
 
 
 @NgModule({
   declarations: [
     MenuComponent,
-    ContactanosComponent
+    ContactanosComponent,
+    PaquetesComponent
   ],
   exports: [
     MenuComponent
