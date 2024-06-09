@@ -3,12 +3,14 @@ import { CommonModule } from '@angular/common';
 import { RouterModule} from '@angular/router';
 
 import { MenuComponent } from './menu/menu.component';
+import { ContactanosComponent } from './contactanos/contactanos.component';
 
 
 
 @NgModule({
   declarations: [
-    MenuComponent
+    MenuComponent,
+    ContactanosComponent
   ],
   exports: [
     MenuComponent
