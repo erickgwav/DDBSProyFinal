@@ -1,19 +1,19 @@
 const express = require('express');
-const mysql = require('mysql');
+const mysql = require('mysql2');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 
 const app = express();
-const port = 3000;
+const port = 33066;
 
 app.use(cors());
 app.use(bodyParser.json());
 
 const connection = mysql.createConnection({
-  host: 'localhost',
-  user: 'tu_usuario',
-  password: 'tu_contraseña',
-  database: 'tu_base_de_datos'
+  host: '25.66.149.219',
+  user: 'user',
+  password: 'root',
+  database: 'apparty_db',
 });
 
 connection.connect((err) => {
@@ -25,7 +25,7 @@ connection.connect((err) => {
 });
 
 app.get('/api/data', (req, res) => {
-  connection.query('SELECT * FROM tu_tabla', (err, results) => {
+  connection.query('SELECT * FROM Boleto', (err, results) => {
     if (err) {
       return res.status(500).send(err);
     }
