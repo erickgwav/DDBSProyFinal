@@ -6,15 +6,15 @@ import { HomeComponent } from './pages/home/home.component';
 import { ContactanosComponent } from './shared/contactanos/contactanos.component';
 import { PaquetesComponent } from './shared/paquetes/paquetes.component';
 
+
 const routes: Routes = [
-  {path: 'home', component: HomeComponent},
-  {path: 'paquetes', component: PaquetesComponent},
-  {path: 'contactanos', component: ContactanosComponent},
-  
+  { path: 'home', component: HomeComponent },
+  { path: 'paquetes', component: PaquetesComponent },
+  { path: 'contactanos', component: ContactanosComponent },
 
 
-  {path: '', pathMatch: 'full', redirectTo: '/home'},
-  {path: '**', pathMatch: 'full', redirectTo: '/home'},
+  { path: '', pathMatch: 'full', redirectTo: '/home' },
+  { path: '**', pathMatch: 'full', redirectTo: '/home' },
 ];
 
 @NgModule({

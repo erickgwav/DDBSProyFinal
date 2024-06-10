@@ -1,14 +1,103 @@
-<div class="card mb-3" style="max-width: 540px;">
-    <div class="row g-0">
-      <div class="col-md-4">
-        <img src="..." class="img-fluid rounded-start" alt="...">
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paquetes de Fiesta</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      background-color: #000;
+      color: #fff;
+    }
+    .card {
+      background-color: #333;
+      color: #fff;
+      border: none;
+    }
+    .card-body {
+      background-color: #555;
+    }
+    .img-fluid {
+      max-height: 150px;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+  <div class="container mt-5">
+    <h1 class="text-center mb-5">Paquetes de Fiesta</h1>
+    <div class="row">
+      <div class="col-md-6 mb-4">
+        <div class="card mb-3" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="https://via.placeholder.com/150" class="img-fluid rounded-start" alt="Paquete Básico">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Paquete Básico</h5>
+                <p class="card-text">Incluye:</p>
+                <ul>
+                  <li>Decoración básica</li>
+                  <li>100 invitaciones</li>
+                  <li>Música ambiental</li>
+                </ul>
+                <a href="crear-evento.component.html" class="btn btn-primary">Seleccionar</a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="col-md-8">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+      <div class="col-md-6 mb-4">
+        <div class="card mb-3" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="https://via.placeholder.com/150" class="img-fluid rounded-start" alt="Paquete Premium">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Paquete Premium</h5>
+                <p class="card-text">Incluye:</p>
+                <ul>
+                  <li>Decoración completa</li>
+                  <li>200 invitaciones</li>
+                  <li>Música con DJ</li>
+                  <li>Buffet de comida</li>
+                </ul>
+                <a href="crear-evento.component.html" class="btn btn-primary">Seleccionar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 mb-4">
+        <div class="card mb-3" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="https://via.placeholder.com/150" class="img-fluid rounded-start" alt="Paquete VIP">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Paquete VIP</h5>
+                <p class="card-text">Incluye:</p>
+                <ul>
+                  <li>Decoración temática</li>
+                  <li>300 invitaciones</li>
+                  <li>Música en vivo</li>
+                  <li>Buffet de comida gourmet</li>
+                  <li>Servicio de fotografía y video</li>
+                </ul>
+                <a href="crear-evento.component.html" class="btn btn-primary">Seleccionar</a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
