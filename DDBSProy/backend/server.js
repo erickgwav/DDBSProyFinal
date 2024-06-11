@@ -4,14 +4,15 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 
 const app = express();
-const port = 33066;
+const port = 3000;
 
 app.use(cors());
 app.use(bodyParser.json());
 
 const connection = mysql.createConnection({
-  host: '25.66.149.219',
-  user: 'user',
+  host: 'localhost',
+  port: '33066',
+  user: 'root',
   password: 'root',
   database: 'apparty_db',
 });
