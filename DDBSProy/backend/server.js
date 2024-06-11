@@ -36,3 +36,18 @@ app.get('/api/data', (req, res) => {
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);
 });
+
+
+app.get('/api/paquetes', (req, res) => {
+  connection.query('SELECT * FROM paquete', (error, results) => {
+    if (error) throw error;
+    res.json(results);
+  });
+});
+
+app.get('/api/servicio', (req, res) => {
+  connection.query('SELECT * FROM boleto', (error, results) => {
+    if (error) throw error;
+    res.json(results);
+  });
+});

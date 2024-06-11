@@ -7,12 +7,11 @@ import { ContactanosComponent } from './contactanos/contactanos.component';
 import { PaquetesComponent } from './paquetes/paquetes.component';
 
 
-
 @NgModule({
   declarations: [
     MenuComponent,
     ContactanosComponent,
-    PaquetesComponent
+    PaquetesComponent,
   ],
   exports: [
     MenuComponent

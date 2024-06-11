@@ -1,30 +1,4 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Paquetes de Fiesta</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <style>
-    body {
-      background-color: #000;
-      color: #fff;
-    }
-    .card {
-      background-color: #333;
-      color: #fff;
-      border: none;
-    }
-    .card-body {
-      background-color: #555;
-    }
-    .img-fluid {
-      max-height: 150px;
-      object-fit: cover;
-    }
-  </style>
-</head>
-<body>
+
   <div class="container mt-5">
     <h1 class="text-center mb-5">Paquetes de Fiesta</h1>
     <div class="row">
@@ -96,8 +70,47 @@
       </div>
     </div>
   </div>
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</body>
-</html>
+
+  <div class="container mt-4">
+    <h2>Paquetes</h2>
+    <div class="table-responsive">
+      <table class="table table-bordered table-hover">
+        <thead class="thead-light">
+          <tr>
+            <th scope="col">Nombre</th>
+            <th scope="col">Descripcion</th>
+            <th scope="col">Precio</th>
+            <!-- Otros campos -->
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let paquete of paquetes">
+            <td>{{ paquete.nombre }}</td>
+            <td>{{ paquete.descripcion }}</td>
+            <td>{{ paquete.precio }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  
+    <h2>Servicios</h2>
+    <div class="table-responsive">
+      <table class="table table-bordered table-hover">
+        <thead class="thead-light">
+          <tr>
+            <th scope="col">Sin datos todavia</th>
+            <!-- Otros campos -->
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let servicio of servicios">
+            <td>{{ servicio.id }}</td>
+            <td>{{ servicio.servicio_id }}</td>
+            <td>{{ servicio.paquete_id }}</td>
+            <!-- Otros campos -->
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  

@@ -14,4 +14,14 @@ export class DataService {
   getData(): Observable<any> {
     return this.http.get<any>(this.apiUrl);
   }
+
+  getPaquetes(): Observable<any[]> {
+    return this.http.get<any[]>(`${this.apiUrl}/paquetes`);
+  }
+
+  getServicios(): Observable<any[]> {
+    return this.http.get<any[]>(`${this.apiUrl}/paquetes`);
+  }
+
+
 }

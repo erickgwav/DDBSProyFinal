@@ -1,0 +1,12 @@
+.card {
+    background-color: #333;
+    color: #fff;
+    border: none;
+  }
+  .card-body {
+    background-color: #555;
+  }
+  .img-fluid {
+    max-height: 150px;
+    object-fit: cover;
+  }
