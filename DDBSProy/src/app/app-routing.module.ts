@@ -5,12 +5,14 @@ import { CommonModule } from '@angular/common';
 import { HomeComponent } from './pages/home/home.component';
 import { ContactanosComponent } from './shared/contactanos/contactanos.component';
 import { PaquetesComponent } from './shared/paquetes/paquetes.component';
+import { CrearEventoComponent } from './shared/crear-evento/crear-evento.component';
 
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'paquetes', component: PaquetesComponent },
   { path: 'contactanos', component: ContactanosComponent },
+  { path: 'crear-evento', component: CrearEventoComponent },
 
 
   { path: '', pathMatch: 'full', redirectTo: '/home' },

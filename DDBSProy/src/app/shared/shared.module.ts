@@ -5,6 +5,7 @@ import { RouterModule} from '@angular/router';
 import { MenuComponent } from './menu/menu.component';
 import { ContactanosComponent } from './contactanos/contactanos.component';
 import { PaquetesComponent } from './paquetes/paquetes.component';
+import { CrearEventoComponent } from './crear-evento/crear-evento.component';
 
 
 @NgModule({
@@ -12,6 +13,7 @@ import { PaquetesComponent } from './paquetes/paquetes.component';
     MenuComponent,
     ContactanosComponent,
     PaquetesComponent,
+    CrearEventoComponent,
   ],
   exports: [
     MenuComponent
